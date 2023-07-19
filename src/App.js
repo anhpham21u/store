@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Admin from "./pages/Admin";
+import { createContext, useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ref, child, get } from "firebase/database";
+import { database } from "./firebase";
+import "./scss/styles.scss";
+
+const ApiContext = createContext();
 
 function App() {
+  const [dataProducts, setDataProducts] = useState();
+
+  useEffect(() => {
+    const dbRef = ref(database);
+
+    get(child(dbRef, `fish-store/products`))
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          setDataProducts(snapshot.val());
+        } else {
+          console.log("No data available");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApiContext.Provider value={{ dataProducts, setDataProducts }}>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </BrowserRouter>
+    </ApiContext.Provider>
   );
 }
 
+export { ApiContext };
 export default App;

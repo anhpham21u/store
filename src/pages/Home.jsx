@@ -7,9 +7,12 @@ import Footer from "../components/Footer";
 import about1 from "./../img/about1.jpg";
 import about2 from "./../img/about2.jpg";
 import { ApiContext } from "../App";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Home() {
+  const location = useLocation();
+  const navigate = useNavigate();
   const { dataProducts } = useContext(ApiContext);
   let isTakeData = false;
   let topArr;
@@ -20,6 +23,13 @@ function Home() {
       return val.top === true;
     });
   }
+
+  useEffect(() => {
+    if (location.pathname.endsWith("/")) {
+      const newPathname = location.pathname.slice(0, -1);
+      navigate(newPathname, { replace: true });
+    }
+  }, [location.pathname, navigate]);
 
   return (
     <>

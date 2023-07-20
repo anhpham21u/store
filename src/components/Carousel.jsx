@@ -1,4 +1,7 @@
 import { memo } from "react";
+import b1 from "./../img/b1.jpg";
+import b2 from "./../img/b2.jpg";
+import b3 from "./../img/b3.jpg";
 
 function Carousel() {
   return (
@@ -31,11 +34,7 @@ function Carousel() {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img
-            src="img/b1.jpg"
-            className="d-block w-100 car-img"
-            alt="background"
-          />
+          <img src={b1} className="d-block w-100 car-img" alt="background" />
           <div className="carousel-caption d-none d-md-block">
             <h5 className="fs-1">Wellcome to my fucking website!!!</h5>
             <p className="fs-5 d-none d-lg-block">
@@ -45,11 +44,7 @@ function Carousel() {
           </div>
         </div>
         <div className="carousel-item">
-          <img
-            src="img/b2.jpg"
-            className="d-block w-100 car-img"
-            alt="background"
-          />
+          <img src={b2} className="d-block w-100 car-img" alt="background" />
           <div className="carousel-caption d-none d-md-block">
             <h5 className="fs-1">Wellcome to my fucking website!!!</h5>
             <p className="fs-5 d-none d-lg-block">
@@ -60,11 +55,7 @@ function Carousel() {
           </div>
         </div>
         <div className="carousel-item">
-          <img
-            src="img/b3.jpg"
-            className="d-block w-100 car-img"
-            alt="background"
-          />
+          <img src={b3} className="d-block w-100 car-img" alt="background" />
           <div className="carousel-caption d-none d-md-block">
             <h5 className="fs-1">Wellcome to my fucking website!!!</h5>
             <p className="fs-5 d-none d-lg-block">

@@ -8,6 +8,8 @@ import {
   MDBTypography,
 } from "mdb-react-ui-kit";
 import React, { memo } from "react";
+import elon from "./../img/elon.jpg";
+import zuck from "./../img/zuck.jpg";
 
 function QuoteCarosuel() {
   return (
@@ -25,7 +27,7 @@ function QuoteCarosuel() {
                 <div className="carousel-item active">
                   <div className="d-flex justify-content-center mb-4">
                     <MDBCardImage
-                      src="img/elon.jpg"
+                      src={elon}
                       className="rounded-circle shadow-1-strong"
                       width="100"
                       height="100"
@@ -50,7 +52,7 @@ function QuoteCarosuel() {
                 <div className="carousel-item">
                   <div className="d-flex justify-content-center mb-4">
                     <MDBCardImage
-                      src="img/zuck.jpg"
+                      src={zuck}
                       className="rounded-circle shadow-1-strong"
                       width="100"
                       height="100"

@@ -4,6 +4,8 @@ import Product from "../components/Product";
 import QuoteCarosuel from "../components/Quotes";
 import Form from "../components/Form";
 import Footer from "../components/Footer";
+import about1 from "./../img/about1.jpg";
+import about2 from "./../img/about2.jpg";
 import { ApiContext } from "../App";
 import { useContext } from "react";
 
@@ -27,7 +29,7 @@ function Home() {
       <section className="container mt-6">
         <div className="row">
           <div className="col-lg mx-3">
-            <img className="w-100 img-ab" src="img/about1.jpg" alt="about" />
+            <img className="w-100 img-ab" src={about1} alt="about" />
           </div>
           <div className="col-lg mx-3 my-3">
             <div className="h-100 d-flex align-items-center">
@@ -64,7 +66,7 @@ function Home() {
             </div>
           </div>
           <div className="col-lg mx-3">
-            <img className="w-100 img-ab" src="img/about2.jpg" alt="about" />
+            <img className="w-100 img-ab" src={about2} alt="about" />
           </div>
         </div>
       </section>

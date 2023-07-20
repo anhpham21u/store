@@ -1,5 +1,6 @@
 import { useRef, useEffect, memo } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "./../img/logo.png";
 
 function MyNav() {
   const navEl = useRef(null);
@@ -48,7 +49,7 @@ function MyNav() {
     >
       <div className="container">
         <Link to="/">
-          <img src="img/logo.png" alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" />
         </Link>
         <button
           className="navbar-toggler"

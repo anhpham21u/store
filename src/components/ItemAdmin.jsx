@@ -44,7 +44,7 @@ function ItemAdmin({ data, id }) {
         <div className="par-img-admin">
           <img className="img-admin h-100" src={data.link} alt="admin" />
         </div>
-        <div className="ms-4 overflow-hidden">
+        <div className="ms-4 overflow-hidden w-100">
           <div className="d-flex justify-content-between">
             <p className="fw-bold mb-1">{data.name}</p>
             <div data-bs-toggle="modal" data-bs-target={"#modalItem" + id}>

@@ -20,17 +20,17 @@ function MyNav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/">
+              <Link className="nav-link" aria-current="page" to="/store">
                 Trang chủ
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/products">
+              <Link className="nav-link" to="/store/products">
                 Sản phẩm
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/admin">
+              <Link className="nav-link active" to="/store/admin">
                 Admin
               </Link>
             </li>

@@ -10,11 +10,11 @@ function MyNav() {
   let activeProducts;
 
   // Check pathname
-  if (location.pathname === "/") {
+  if (location.pathname === "/store") {
     navbarClass = "navbar-dark";
     activeHome = "active";
     activeProducts = "";
-  } else if (location.pathname === "/products") {
+  } else if (location.pathname === "/store/products") {
     navbarClass = "navbar-light bg-navbar";
     activeHome = "";
     activeProducts = "active";
@@ -22,7 +22,7 @@ function MyNav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (location.pathname === "/") {
+      if (location.pathname === "/store") {
         if (window.scrollY > 100) {
           navEl.current.classList.add("bg-navbar");
           navEl.current.classList.add("navbar-light");
@@ -48,7 +48,7 @@ function MyNav() {
       ref={navEl}
     >
       <div className="container">
-        <Link to="/">
+        <Link to="/store">
           <img src={logo} alt="logo" className="logo" />
         </Link>
         <button
@@ -68,18 +68,21 @@ function MyNav() {
               <Link
                 className={`nav-link ${activeHome}`}
                 aria-current="page"
-                to="/"
+                to="/store"
               >
                 Trang chủ
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${activeProducts}`} to="/products">
+              <Link
+                className={`nav-link ${activeProducts}`}
+                to="/store/products"
+              >
                 Sản phẩm
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/admin">
+              <Link className="nav-link" to="/store/admin">
                 Admin
               </Link>
             </li>

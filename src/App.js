@@ -32,9 +32,9 @@ function App() {
     <ApiContext.Provider value={{ dataProducts, setDataProducts }}>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route exact path="/store" element={<Home />} />
+          <Route path="/store/products" element={<Products />} />
+          <Route path="/store/admin" element={<Admin />} />
         </Routes>
       </BrowserRouter>
     </ApiContext.Provider>

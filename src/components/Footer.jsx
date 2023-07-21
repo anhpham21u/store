@@ -9,12 +9,15 @@ function Footer() {
           <div className="col">
             <h5>Trang</h5>
             <div className="mb-1">
-              <Link className="text-muted text-decoration-none" to="/">
+              <Link className="text-muted text-decoration-none" to="/store">
                 Trang chủ
               </Link>
             </div>
             <div className="mb-1">
-              <Link className="text-muted text-decoration-none" to="/products">
+              <Link
+                className="text-muted text-decoration-none"
+                to="/store/products"
+              >
                 Sản phẩm
               </Link>
             </div>

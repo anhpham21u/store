@@ -38,10 +38,10 @@ function Home() {
 
       <section className="container mt-6">
         <div className="row">
-          <div className="col-lg mx-3">
+          <div className="col-lg">
             <img className="w-100 img-ab" src={about1} alt="about" />
           </div>
-          <div className="col-lg mx-3 my-3">
+          <div className="col-lg my-3">
             <div className="h-100 d-flex align-items-center">
               <div>
                 <h3 className="mb-4">Thiết kế, sản xuất mô hình thủy sinh</h3>
@@ -61,7 +61,7 @@ function Home() {
 
       <section className="container mt-5">
         <div className="row">
-          <div className="col-lg mx-3 my-3">
+          <div className="col-lg my-3">
             <div className="h-100 d-flex align-items-center">
               <div>
                 <h3 className="mb-4">Dịch vụ bảo trì hồ cá</h3>
@@ -75,7 +75,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg mx-3">
+          <div className="col-lg">
             <img className="w-100 img-ab" src={about2} alt="about" />
           </div>
         </div>

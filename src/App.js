@@ -30,7 +30,7 @@ function App() {
 
   return (
     <ApiContext.Provider value={{ dataProducts, setDataProducts }}>
-      <BrowserRouter basename="/store">
+      <BrowserRouter>
         <Routes>
           <Route exact path="/store" element={<Home />} />
           <Route path="/store/products" element={<Products />} />

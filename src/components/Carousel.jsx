@@ -2,6 +2,7 @@ import { memo } from "react";
 import b1 from "./../img/b1.jpg";
 import b2 from "./../img/b2.jpg";
 import b3 from "./../img/b3.jpg";
+import { Link } from "react-scroll";
 
 function Carousel() {
   return (
@@ -40,7 +41,9 @@ function Carousel() {
             <p className="fs-5 d-none d-lg-block">
               Ở đây chúng tôi bán cá. Ấn nút mua ở dưới lày lày ↙ ↙ ↙
             </p>
-            <button className="btn btn-primary btn-lg">Mua ngay</button>
+            <Link activeClass="active" to="register" duration={500}>
+              <button className="btn btn-primary btn-lg">Mua ngay</button>
+            </Link>
           </div>
         </div>
         <div className="carousel-item">
@@ -51,7 +54,9 @@ function Carousel() {
               Khám phá thế giới cá cảnh tuyệt vời ngay hôm nay! Chúng tôi cung
               cấp những chú cá cảnh đẹp mắt, đa dạng về loại và màu sắc.
             </p>
-            <button className="btn btn-primary btn-lg">Mua ngay</button>
+            <Link activeClass="active" to="register" duration={500}>
+              <button className="btn btn-primary btn-lg">Mua ngay</button>
+            </Link>
           </div>
         </div>
         <div className="carousel-item">
@@ -62,7 +67,9 @@ function Carousel() {
               Khám phá thế giới cá cảnh tuyệt vời ngay hôm nay! Chúng tôi cung
               cấp những chú cá cảnh đẹp mắt, đa dạng về loại và màu sắc.
             </p>
-            <button className="btn btn-primary btn-lg">Mua ngay</button>
+            <Link activeClass="active" to="register" duration={500}>
+              <button className="btn btn-primary btn-lg">Mua ngay</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import ContactBtn from "./ContactBtn";
 
 function Product({ data }) {
   const topEl = useRef(null);
@@ -46,9 +47,7 @@ function Product({ data }) {
         </span>
         <div className="d-flex justify-content-between align-items-center">
           <p className="card-title fw-bold">{data.name}</p>
-          <a href="#test" className="btn btn-outline-success btn-sm btn-card">
-            Liên hệ
-          </a>
+          <ContactBtn />
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import about2 from "./../img/about2.jpg";
 import { ApiContext } from "../App";
 import { useContext, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-scroll";
 
 function Home() {
   const location = useLocation();
@@ -52,7 +53,9 @@ function Home() {
                   quan nước sống tuyệt vời, tạo không gian sống tự nhiên cho cá
                   cảnh và mang đến trải nghiệm tuyệt vời cho khách hàng của bạn.
                 </p>
-                <button className="btn btn-primary btn-lg">Liên hệ</button>
+                <Link activeClass="active" to="register" duration={500}>
+                  <button className="btn btn-primary btn-lg">Liên hệ</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -71,7 +74,9 @@ function Home() {
                   nghiệm và hiểu biết sâu sắc về hệ sinh thái nước, chúng tôi
                   cam kết đảm bảo hồ cá của bạn luôn trong tình trạng hoàn hảo.
                 </p>
-                <button className="btn btn-primary btn-lg">Liên hệ</button>
+                <Link activeClass="active" to="register" duration={500}>
+                  <button className="btn btn-primary btn-lg">Liên hệ</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -131,7 +136,11 @@ function Home() {
       </section>
 
       <QuoteCarosuel />
-      <Form />
+
+      <section id="register">
+        <Form />
+      </section>
+
       <Footer />
     </>
   );

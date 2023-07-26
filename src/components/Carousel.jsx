@@ -37,7 +37,7 @@ function Carousel() {
         <div className="carousel-item active">
           <img src={b1} className="d-block w-100 car-img" alt="background" />
           <div className="carousel-caption d-none d-md-block">
-            <h5 className="fs-1">Wellcome to my fucking website!!!</h5>
+            <h5 className="fs-1">Wellcome to my website!!!</h5>
             <p className="fs-5 d-none d-lg-block">
               Ở đây chúng tôi bán cá. Ấn nút mua ở dưới lày lày ↙ ↙ ↙
             </p>
@@ -49,7 +49,7 @@ function Carousel() {
         <div className="carousel-item">
           <img src={b2} className="d-block w-100 car-img" alt="background" />
           <div className="carousel-caption d-none d-md-block">
-            <h5 className="fs-1">Wellcome to my fucking website!!!</h5>
+            <h5 className="fs-1">Wellcome to my website!!!</h5>
             <p className="fs-5 d-none d-lg-block">
               Khám phá thế giới cá cảnh tuyệt vời ngay hôm nay! Chúng tôi cung
               cấp những chú cá cảnh đẹp mắt, đa dạng về loại và màu sắc.
@@ -62,7 +62,7 @@ function Carousel() {
         <div className="carousel-item">
           <img src={b3} className="d-block w-100 car-img" alt="background" />
           <div className="carousel-caption d-none d-md-block">
-            <h5 className="fs-1">Wellcome to my fucking website!!!</h5>
+            <h5 className="fs-1">Wellcome to my website!!!</h5>
             <p className="fs-5 d-none d-lg-block">
               Khám phá thế giới cá cảnh tuyệt vời ngay hôm nay! Chúng tôi cung
               cấp những chú cá cảnh đẹp mắt, đa dạng về loại và màu sắc.
